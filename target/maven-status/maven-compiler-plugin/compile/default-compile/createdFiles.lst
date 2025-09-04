@@ -1,0 +1,9 @@
+com\mycompany\chess\ChessMain.class
+com\mycompany\chess\Queen.class
+com\mycompany\chess\Piece.class
+com\mycompany\chess\Rook.class
+com\mycompany\chess\Bishop.class
+com\mycompany\chess\Pawn.class
+com\mycompany\chess\Knight.class
+com\mycompany\chess\Board.class
+com\mycompany\chess\King.class
