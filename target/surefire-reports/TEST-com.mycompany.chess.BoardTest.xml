@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.chess.BoardTest" time="0.214" tests="9" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.chess.BoardTest" time="0.391" tests="9" errors="0" skipped="0" failures="1">
   <properties>
+    <property name="jpda.address" value="65426"/>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
@@ -10,12 +11,13 @@
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Africa/Johannesburg"/>
+    <property name="forkMode" value="once"/>
     <property name="os.name" value="Windows 11"/>
     <property name="java.vm.specification.version" value="23"/>
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\jolan\AppData\Local\Temp\surefire1250400375921450316\surefirebooter-20250904220308750_3.jar C:\Users\jolan\AppData\Local\Temp\surefire1250400375921450316 2025-09-04T22-03-08_431-jvmRun1 surefire-20250904220308750_1tmp surefire_0-20250904220308750_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\jolan\AppData\Local\Temp\surefire187131343391098122\surefirebooter-20250904233644334_3.jar C:\Users\jolan\AppData\Local\Temp\surefire187131343391098122 2025-09-04T23-36-43_671-jvmRun1 surefire-20250904233644334_1tmp surefire_0-20250904233644334_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.mycompany.chess.BoardTest"/>
     <property name="surefire.test.class.path" value="C:\Users\jolan\OneDrive\Desktop\varsity\2025\semester 2\prog\assignment\Chess\target\test-classes;C:\Users\jolan\OneDrive\Desktop\varsity\2025\semester 2\prog\assignment\Chess\target\classes;C:\Users\jolan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\jolan\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\jolan\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\jolan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jolan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\jolan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\jolan\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;"/>
@@ -31,7 +33,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\jolan\AppData\Local\Temp\surefire1250400375921450316\surefirebooter-20250904220308750_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jolan\AppData\Local\Temp\surefire187131343391098122\surefirebooter-20250904233644334_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.2+7-58"/>
@@ -42,6 +44,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="jpda.listen" value="true"/>
     <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-24\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="localRepository" value="C:\Users\jolan\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
@@ -59,25 +62,26 @@
     <property name="java.vm.version" value="23.0.2+7-58"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
+    <property name="maven.surefire.debug" value="-agentlib:jdwp=transport=dt_socket,server=n,address=65426"/>
   </properties>
-  <testcase name="testInvalidMove" classname="com.mycompany.chess.BoardTest" time="0.075">
+  <testcase name="testInvalidMove" classname="com.mycompany.chess.BoardTest" time="0.182">
     <system-out><![CDATA[Invalid move for Pawn
 Cannot capture your own piece!
 ]]></system-out>
   </testcase>
-  <testcase name="testMoveKing" classname="com.mycompany.chess.BoardTest" time="0.008">
+  <testcase name="testMoveKing" classname="com.mycompany.chess.BoardTest" time="0.022">
     <system-out><![CDATA[Invalid move for King
 ]]></system-out>
   </testcase>
-  <testcase name="testMovePawn" classname="com.mycompany.chess.BoardTest" time="0.013">
+  <testcase name="testMovePawn" classname="com.mycompany.chess.BoardTest" time="0.029">
     <system-out><![CDATA[Not your piece! It's black's turn.
 ]]></system-out>
   </testcase>
-  <testcase name="testMoveRook" classname="com.mycompany.chess.BoardTest" time="0.004">
+  <testcase name="testMoveRook" classname="com.mycompany.chess.BoardTest" time="0.005">
     <system-out><![CDATA[Invalid move for Rook
 ]]></system-out>
   </testcase>
-  <testcase name="testMoveBishop" classname="com.mycompany.chess.BoardTest" time="0.016">
+  <testcase name="testMoveBishop" classname="com.mycompany.chess.BoardTest" time="0.025">
     <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -93,14 +97,14 @@ Cannot capture your own piece!
     <system-out><![CDATA[Invalid move for Bishop
 ]]></system-out>
   </testcase>
-  <testcase name="testMoveQueen" classname="com.mycompany.chess.BoardTest" time="0.004">
+  <testcase name="testMoveQueen" classname="com.mycompany.chess.BoardTest" time="0.005">
     <system-out><![CDATA[Invalid move for Queen
 ]]></system-out>
   </testcase>
-  <testcase name="testMoveKnight" classname="com.mycompany.chess.BoardTest" time="0.003">
+  <testcase name="testMoveKnight" classname="com.mycompany.chess.BoardTest" time="0.004">
     <system-out><![CDATA[Invalid move for Knight
 ]]></system-out>
   </testcase>
-  <testcase name="testCapturePiece" classname="com.mycompany.chess.BoardTest" time="0.004"/>
-  <testcase name="testParsePosition" classname="com.mycompany.chess.BoardTest" time="0.003"/>
+  <testcase name="testCapturePiece" classname="com.mycompany.chess.BoardTest" time="0.003"/>
+  <testcase name="testParsePosition" classname="com.mycompany.chess.BoardTest" time="0.005"/>
 </testsuite>
